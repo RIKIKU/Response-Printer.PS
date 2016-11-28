@@ -1,5 +1,5 @@
 ﻿<#
-V1.1.0
+V1.1.2
 This script is used to parse the call log from Microsip and match the phone numbers with a list of fire fighters and their skillset.
 This information is then displayed on screen so that other fire fighters may see who is on their way to the station. 
 
@@ -147,7 +147,7 @@ class CallDetails
         $this.FirstName = $FirstName;
         $this.LastName = $LastName;
         $this.FullName = "$FirstName $LastName";
-        $this.TimeCalled = $this.DateTime.ToLocalTime().ToString('HH:MM')
+        $this.TimeCalled = $this.DateTime.ToLocalTime().ToString('HH:mm')
         $this.Brigade = $Brigade
         
    }
